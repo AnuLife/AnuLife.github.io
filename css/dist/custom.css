@@ -1047,7 +1047,7 @@ a {
   color: #36a5df;
 }
 
-.attention * {
+.attention *, .tip *, .note * {
   color: #3b4351;
 }
 
