@@ -719,12 +719,11 @@ a:hover {
     line-height: 75px;
     font-size: 6px;
     cursor: pointer;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 0px 0px 2px #000000;
     border: 0;
     color: #fff;
     position: relative;
-    transition: 0.2s all;
-    box-shadow: 0 1px 3px 0px #00000052; }
+    transition: 0.2s all; }
   .colorBoard .btn:first-of-type {
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px; }
@@ -732,7 +731,37 @@ a:hover {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px; }
   .colorBoard .btn:hover {
-    box-shadow: 0 0 5px 0px #bdbdbd;
+    box-shadow: inset 0px 0px 7px 0px #00000069;
+    font-weight: bolder;
+    z-index: 1; }
+
+.colorBoardTheme {
+  padding: 10px;
+  height: 90px;
+  float: left; }
+  .colorBoardTheme .btn {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 0;
+    text-align: center;
+    border-radius: 0;
+    line-height: 75px;
+    font-size: 6px;
+    cursor: pointer;
+    text-shadow: 0px 0px 2px #000000;
+    border: 0;
+    color: #fff;
+    position: relative;
+    transition: 0.2s all; }
+  .colorBoardTheme .btn:first-of-type {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; }
+  .colorBoardTheme .btn:last-of-type {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px; }
+  .colorBoardTheme .btn:hover {
+    box-shadow: inset 0px 0px 7px 0px #00000069;
     font-weight: bolder;
     z-index: 1; }
 
