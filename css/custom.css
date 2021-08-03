@@ -417,7 +417,14 @@ a:hover {
   color: #999ca8;
   width: 55%;
   text-align: right;
-  float: right; }
+  position: relative;
+  float: right;
+  z-index: 2; }
+
+.l_logo {
+  width: 17px;
+  vertical-align: middle;
+  margin-right: 6px; }
 
 @media (min-width: 1280px) {
   .off-canvas-content {
@@ -766,7 +773,7 @@ a:hover {
     z-index: 1; }
 
 .book-sidebar .book-menu .accordion {
-  padding: 0.625rem 0.6rem 0.625rem 1.6rem !important; }
+  padding: 0.625rem 0.6rem 0.625rem 2rem !important; }
 
 .book-sidebar .book-menu h1 {
   padding: 0 0.6rem 0 1.2rem !important;
@@ -902,7 +909,9 @@ code {
 a {
   color: #36a5df; }
 
-.attention *, .tip *, .note * {
+.attention *,
+.tip *,
+.note * {
   color: #3b4351; }
 
 .book-navbar i {
@@ -1023,6 +1032,38 @@ a {
   .switch-pic .platform-name {
     margin-top: 200px; }
 
+.myPagination {
+  overflow: hidden;
+  margin: 0 auto; }
+  .myPagination > div {
+    float: right; }
+    .myPagination > div > a > div {
+      width: 30px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin: 3px;
+      border: 1px solid #808080;
+      float: left;
+      -moz-user-select: none;
+      /*火狐*/
+      -webkit-user-select: none;
+      /*webkit浏览器*/
+      -ms-user-select: none;
+      /*IE10*/
+      -khtml-user-select: none;
+      /*早期浏览器*/
+      user-select: none;
+      color: white !important; }
+      .myPagination > div > a > div:hover {
+        background-color: ivory;
+        color: black !important;
+        font-weight: bold; }
+    .myPagination > div > a > .page_chosen {
+      background-color: ivory;
+      color: black !important;
+      font-weight: bold; }
+
 .machine-pics {
   text-align: center;
   margin-top: 50px; }
@@ -1090,7 +1131,8 @@ a {
         zoom: 0.81; }
   .ns-cards .ringfit {
     width: 358px !important; }
-    .ns-cards .ringfit .ns-card, .ns-cards .ringfit .g-t {
+    .ns-cards .ringfit .ns-card,
+    .ns-cards .ringfit .g-t {
       width: 358px; }
   .ns-cards .out:hover .ns-card {
     opacity: 0.6; }
