@@ -313,7 +313,7 @@ function sidebar_toggle() {
 <h2 id="1-官网下载安装">1.官网下载安装</h2>
 <p><a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">https://nodejs.org/en/download/</a></p>
 <h2 id="2-配置环境变量">2.配置环境变量</h2>
-<p><img src="https://www.imageoss.com/images/2021/08/24/0ENdrF1391c93387555108.png" alt=""></p>
+<p><img src="https://anuluca.gitee.io/me/other/0ENdrF.png" alt=""></p>
 <p>在cmd中输入<code>node -v</code>,<code>npm -v</code>检查版本，显示版本即安装成功</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
@@ -322,16 +322,16 @@ function sidebar_toggle() {
 <p>在解压之后的文件路径下新建两个文件夹：<br>
 <strong>node_cache</strong>：npm的缓存路径<br>
 <strong>node_global</strong>：npm的安装全局模块的路径<br>
-<img src="https://www.imageoss.com/images/2021/08/24/0ENzIs3ad18486d7b5fef3.png" alt=""></p>
+<img src="https://anuluca.gitee.io/me/other/0ENzIs.png" alt=""></p>
 <p>创建好之后，打开cmd执行下边两条命令，修改npm的默认配置：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm config set prefix "D:\work\node-v10.15.1-win-x64\node_global"</span><br><span class="line">npm config set cache "D:\work\node-v10.15.1-win-x64\node_cache"</span><br></pre></td></tr></table></figure>
 <h2 id="4-配置NODE-PATH环境变量">4.配置NODE_PATH环境变量</h2>
 <p>在系统变量下新建<code>NODE_PATH</code>，由于改变了module的默认地址，所以用户变量要跟着改变一下PATH，要不使用module的时候会导致输入命令出现“xxx不是内部或外部命令，也不是可运行的程序或批处理文件”这个错误。</p>
 <p>node.js 的全局依赖模块的路径：<br>
 其路径中的<code>node_modules</code> 不用创建，在下载依赖模块时，会自动创建该文件夹，并将依赖模块存储在其中<br>
-<img src="https://www.imageoss.com/images/2021/08/24/0EUMz6d82f6be0c9d2fe68.png" alt=""><br>
+<img src="https://anuluca.gitee.io/me/other/0EUMz6.png" alt=""><br>
 同时还要设置用户变量<br>
-<img src="https://www.imageoss.com/images/2021/08/24/0EUYod34629dd5765a4311.png" alt=""></p>
+<img src="https://anuluca.gitee.io/me/other/0EUYod.png" alt=""></p>
 <h2 id="5-修改淘宝镜像源">5.修改淘宝镜像源</h2>
 <h4 id="a-查看镜像源地址">a)查看镜像源地址</h4>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm config list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 结果</span></span><br><span class="line">metrics-registry = "https://registry.npmjs.org/"</span><br></pre></td></tr></table></figure>

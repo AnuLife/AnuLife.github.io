@@ -9,7 +9,7 @@ $(".note_guide").mouseenter(function () {
     width: "0"
   }, 150);
   $(".guidePic").css({
-    backgroundImage: "url('https://www.imageoss.com/images/2021/08/23/YfLHgA4bce712fc8cb83c9.jpg')"
+    backgroundImage: "url('https://anuluca.gitee.io/me/other/YfLHgA.jpg')"
   });
 });
 $(".nintendo_guide").mouseenter(function () {
@@ -31,7 +31,7 @@ $(".jay_guide").mouseenter(function () {
     width: "0"
   }, 150);
   $(".guidePic").css({
-    backgroundImage: "url('https://www.imageoss.com/images/2021/08/24/2145F6682FBCE287815AF6DC59D0C5A5518de00258cb8630.png')"
+    backgroundImage: "url('https://anuluca.gitee.io/me/other/2145F6682FBCE287815AF6DC59D0C5A5.png')"
   });
 });
 $(".home_guide").mouseenter(function () {
@@ -42,7 +42,7 @@ $(".home_guide").mouseenter(function () {
     width: "0"
   }, 150);
   $(".guidePic").css({
-    backgroundImage: "url('https://www.imageoss.com/images/2021/08/23/waoh6O8b7ea1e3474439ac.jpg')"
+    backgroundImage: "url('https://anuluca.gitee.io/me/other/waoh6O.jpg')"
   });
 }); //作品
 
