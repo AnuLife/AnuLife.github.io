@@ -215,49 +215,18 @@ a:hover {
     float: left;
     width: 65%; }
 
-/*游戏页面*/
-.textnintendoswitch {
-  width: 30px;
-  height: 2140px;
-  margin-right: 10px;
-  background-color: #fc0001;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  line-height: 30px;
-  letter-spacing: 1px;
-  float: left; }
-
-.leftgames a {
-  width: 670px;
-  display: block; }
-
-.leftgames {
-  float: left; }
-
-.pcgames,
-.switchgames {
+.suipai {
   overflow: hidden;
   width: 100%;
   height: auto; }
+  .suipai a {
+    width: 670px;
+    display: block; }
 
 .book-sidebar .book-brand a img {
   width: auto !important; }
 
-.textPC {
-  width: 30px;
-  height: 1420px;
-  margin-right: 10px;
-  background-color: black;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  line-height: 30px;
-  letter-spacing: 1px;
-  float: left;
-  margin-top: 40px; }
-
-.gameto {
+.suipai-item {
   width: 670px;
   height: 100px;
   cursor: pointer;
@@ -268,6 +237,7 @@ a:hover {
   font-weight: bold;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% auto;
   color: white;
   position: relative;
   overflow: hidden; }
@@ -280,15 +250,16 @@ a:hover {
   z-index: 0;
   opacity: 0; }
 
-.gametitle {
+.suipai-title {
   width: 670px;
-  text-align: center;
+  text-align: left;
   position: relative;
   float: left;
   z-index: 100;
-  font-size: 20px; }
+  font-size: 22px;
+  padding-left: 20px; }
 
-.gamepages {
+.suipai-pages {
   width: 80px;
   height: 100px;
   position: absolute;
@@ -476,7 +447,7 @@ a:hover {
     .leftgames * {
       font-size: 10px;
       line-height: 50px; }
-  .gameto {
+  .suipai-item {
     height: 50px;
     background-size: 100% auto; } }
 
