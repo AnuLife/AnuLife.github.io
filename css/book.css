@@ -392,7 +392,7 @@ img {
     margin-left: 0; }
   @media all and (min-width: 1280px) {
     .off-canvas-content {
-      margin-left: 12rem;
+      margin-left: 16rem;
       padding: 2.2rem 2.2rem; } }
   @media all and (min-width: 960px) and (max-width: 1279px) {
     .off-canvas-content {

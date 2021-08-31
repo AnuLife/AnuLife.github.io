@@ -8,6 +8,7 @@ $(".note_guide").mouseenter(function () {
   $('.zhegaib,.zhegaic,.zhegaid').stop().animate({
     width: "0"
   }, 150);
+  $('.guidePic .title').text('NOTEBOOK');
   $(".guidePic").css({
     backgroundImage: "url('https://anuluca.gitee.io/me/other/YfLHgA.jpg')"
   });
@@ -19,8 +20,9 @@ $(".nintendo_guide").mouseenter(function () {
   $('.zhegaia,.zhegaic,.zhegaid').stop().animate({
     width: "0"
   }, 150);
+  $('.guidePic .title').text('POKÉMON CENTER');
   $(".guidePic").css({
-    backgroundImage: "url('https://anuluca.gitee.io/me/other/gddtaj.jpg')"
+    backgroundImage: "url('https://anuluca.gitee.io/me/other/IMG_6139.JPG')"
   });
 });
 $(".jay_guide").mouseenter(function () {
@@ -30,6 +32,7 @@ $(".jay_guide").mouseenter(function () {
   $('.zhegaia,.zhegaib,.zhegaid').stop().animate({
     width: "0"
   }, 150);
+  $('.guidePic .title').text('JAY SPACE');
   $(".guidePic").css({
     backgroundImage: "url('https://anuluca.gitee.io/me/other/2145F6682FBCE287815AF6DC59D0C5A5.png')"
   });
@@ -41,6 +44,7 @@ $(".home_guide").mouseenter(function () {
   $('.zhegaia,.zhegaib,.zhegaic').stop().animate({
     width: "0"
   }, 150);
+  $('.guidePic .title').text('STORAGE');
   $(".guidePic").css({
     backgroundImage: "url('https://anuluca.gitee.io/me/other/waoh6O.jpg')"
   });

@@ -465,11 +465,6 @@ a:hover {
   margin-right: 6px;
 }
 
-@media (min-width: 1280px) {
-  .off-canvas-content {
-    margin-left: 16rem !important;
-  }
-}
 .off-canvas-content {
   padding: 1.2rem 2.2rem 0.5em 2.2em !important;
 }
@@ -767,7 +762,7 @@ a:hover {
   background-image: url("https://anuluca.gitee.io/me/other/YfLHgA.jpg");
 }
 .newGuide .guide .nintendo_guide {
-  background-image: url("https://anuluca.gitee.io/me/other/gddtaj.jpg");
+  background-image: url("https://anuluca.gitee.io/me/other/IMG_6139.JPG");
 }
 .newGuide .guide .jay_guide {
   background-image: url("https://anuluca.gitee.io/me/other/2145F6682FBCE287815AF6DC59D0C5A5.png");
@@ -777,17 +772,6 @@ a:hover {
   background-image: url("https://anuluca.gitee.io/me/other/waoh6O.jpg");
   background-position: bottom;
   border: 0;
-}
-.newGuide .guidePic {
-  width: 75%;
-  height: 100%;
-  float: left;
-  box-shadow: 0px 0px 4px 0 #000000;
-  background-position: center;
-  border-radius: 6px 0 0 6px;
-  overflow: hidden;
-  background-image: url("https://anuluca.gitee.io/me/other/YfLHgA.jpg");
-  background-size: 100% auto;
 }
 
 .zhegaia,
@@ -1293,6 +1277,44 @@ a {
   font-weight: bold;
 }
 
+.machinePagination {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.machinePagination > div {
+  float: right;
+}
+.machinePagination > div > a > div {
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin: 3px;
+  padding: 0 10px;
+  border: 1px solid #808080;
+  float: left;
+  -moz-user-select: none;
+  /*火狐*/
+  -webkit-user-select: none;
+  /*webkit浏览器*/
+  -ms-user-select: none;
+  /*IE10*/
+  -khtml-user-select: none;
+  /*早期浏览器*/
+  user-select: none;
+  color: white !important;
+}
+.machinePagination > div > a > div:hover {
+  background-color: ivory;
+  color: black !important;
+  font-weight: bold;
+}
+.machinePagination > div > a > .page_chosen {
+  background-color: ivory;
+  color: black !important;
+  font-weight: bold;
+}
+
 .littlePet {
   width: 100px;
   height: 100px;
@@ -1347,21 +1369,6 @@ a {
 
 .pet-cha:hover:after {
   content: "";
-}
-
-.machine-pics {
-  text-align: center;
-  margin-top: 50px;
-}
-.machine-pics > img {
-  width: 300px;
-  height: 200px;
-  background-color: skyblue;
-  display: inline-block !important;
-  margin: 5px !important;
-}
-.machine-pics > p {
-  text-align: center;
 }
 
 .ns-cards {
@@ -1956,4 +1963,25 @@ a {
   color: white !important;
   margin-top: 8px;
   text-shadow: 0 0 2px black;
+}
+
+.guidePic {
+  width: 75%;
+  height: 100%;
+  float: left;
+  box-shadow: 0px 0px 4px 0 #000000;
+  background-position: center;
+  border-radius: 6px 0 0 6px;
+  background-image: url("https://anuluca.gitee.io/me/other/YfLHgA.jpg");
+  background-size: 100% auto;
+  position: relative;
+}
+.guidePic .title {
+  font-size: 40px;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  bottom: -20px;
+  left: 20px;
 }
