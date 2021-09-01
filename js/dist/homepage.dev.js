@@ -81,9 +81,11 @@ $(".shits>div").mouseenter(function () {
 }).stop();
 var mySwiper = new Swiper('.swiper-container', {
   autoplay: true,
-  //可选选项，自动滑动
+  //自动滑动
   loop: true,
   // 循环模式选项
+  parallax: true,
+  speed: 400,
   pagination: {
     el: '.swiper-pagination',
     clickable: true

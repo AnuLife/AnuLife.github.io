@@ -40,8 +40,10 @@ $(".shits>div").mouseenter(function () {
 
 
 var mySwiper = new Swiper ('.swiper-container', {
-    autoplay: true,//可选选项，自动滑动
+    autoplay: true,//自动滑动
     loop: true, // 循环模式选项
+    parallax : true,
+    speed:400,
     pagination :{
         el: '.swiper-pagination',
         clickable :true,
