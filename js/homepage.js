@@ -1,29 +1,30 @@
 
 //新版头图
 $(".note_guide").mouseenter(function(){
-    $('.zhegaia').stop().animate({ width: "100%" }, 150);
-    $('.zhegaib,.zhegaic,.zhegaid').stop().animate({ width: "0" }, 150);
-    $('.guidePic .title').text('NOTEBOOK')
+    $('.zhegaia').stop().animate({ width: "0" }, 150);
+    $('.zhegaib,.zhegaic,.zhegaid').stop().animate({ width: "100%" }, 150);
     $(".guidePic").css({ backgroundImage: "url('https://anuluca.gitee.io/me/other/YfLHgA.jpg')" });
 })
 $(".nintendo_guide").mouseenter(function(){
-    $('.zhegaib').stop().animate({ width: "100%" }, 150);
-    $('.zhegaia,.zhegaic,.zhegaid').stop().animate({ width: "0" }, 150);
-    $('.guidePic .title').text('POKÉMON CENTER')
+    $('.zhegaib').stop().animate({ width: "0" }, 150);
+    $('.zhegaia,.zhegaic,.zhegaid').stop().animate({ width: "100%" }, 150);
     $(".guidePic").css({ backgroundImage: "url('https://anuluca.gitee.io/me/other/IMG_6139.JPG')" });
 })
 $(".jay_guide").mouseenter(function(){
-    $('.zhegaic').stop().animate({ width: "100%" }, 150);
-    $('.zhegaia,.zhegaib,.zhegaid').stop().animate({ width: "0" }, 150);
-    $('.guidePic .title').text('JAY SPACE')
+    $('.zhegaic').stop().animate({ width: "0" }, 150);
+    $('.zhegaia,.zhegaib,.zhegaid').stop().animate({ width: "100%" }, 150);
     $(".guidePic").css({ backgroundImage: "url('https://anuluca.gitee.io/me/other/2145F6682FBCE287815AF6DC59D0C5A5.png')" });
 })
 $(".home_guide").mouseenter(function(){
-    $('.zhegaid').stop().animate({ width: "100%" }, 150);
-    $('.zhegaia,.zhegaib,.zhegaic').stop().animate({ width: "0" }, 150);
-    $('.guidePic .title').text('STORAGE')
+    $('.zhegaid').stop().animate({ width: "0" }, 150);
+    $('.zhegaia,.zhegaib,.zhegaic').stop().animate({ width: "100%" }, 150);
     $(".guidePic").css({ backgroundImage: "url('https://anuluca.gitee.io/me/other/waoh6O.jpg')" });
 })
+
+// $(".slide-a").click(function(){
+//     window.location.href = "/"
+//     }
+// )
 
 //作品
 $(".shits>div").mouseenter(function () {
@@ -35,3 +36,22 @@ $(".shits>div").mouseenter(function () {
     $(this).find("span:first-of-type").animate({ bottom: "20px", fontSize: "18px" }, 80)
     $(this).find("span:last-of-type").animate({ height: "12px" }, 200)
 }).stop()
+
+
+
+var mySwiper = new Swiper ('.swiper-container', {
+    autoplay: true,//可选选项，自动滑动
+    loop: true, // 循环模式选项
+    pagination :{
+        el: '.swiper-pagination',
+        clickable :true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  })        
+//如果你初始化时没有定义Swiper实例，后面也可以通过Swiper的HTML元素来获取该实例
+new Swiper('.swiper-container')
+var mySwiper = document.querySelector('.swiper-container').swiper
+mySwiper.slideNext();

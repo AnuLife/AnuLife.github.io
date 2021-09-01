@@ -55,6 +55,7 @@ a:hover {
 
 .book-post img {
   margin-top: 15px;
+  width: 40%;
   margin-bottom: 5px; }
 
 .book-tocbot {
@@ -620,8 +621,6 @@ a:hover {
       .newGuide .guide > a > div > div {
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        opacity: 0.8;
         cursor: pointer;
         transition: 0.1s; }
     .newGuide .guide > a > div:hover {
@@ -629,8 +628,6 @@ a:hover {
       .newGuide .guide > a > div:hover > span {
         opacity: 0.8; }
       .newGuide .guide > a > div:hover > div {
-        background-color: rgba(0, 0, 0, 0.8);
-        opacity: 0.4;
         cursor: pointer;
         text-decoration: none !important; }
     .newGuide .guide .note_guide {
@@ -650,22 +647,15 @@ a:hover {
 .zhegaib,
 .zhegaic,
 .zhegaid {
-  width: 0;
+  width: 100%;
   height: 100%;
-  position: absolute; }
+  position: absolute;
+  right: 0;
+  background-color: black;
+  opacity: 0.6; }
 
 .zhegaia {
-  background-color: #266083;
-  width: 100%; }
-
-.zhegaib {
-  background-color: #e9a514; }
-
-.zhegaic {
-  background-color: #ac338d; }
-
-.zhegaid {
-  background-color: #6c33ac; }
+  width: 0; }
 
 /* 网页常用颜色 */
 .colorBoard {
@@ -1641,11 +1631,19 @@ a {
             height: 70px;
             margin-left: 15px;
             background-size: 100% 100%;
+            line-height: 70px;
             border-radius: 10px;
             margin-top: 5px;
-            transition: all 0.1s; }
+            transition: all 0.1s;
+            background-color: #2b2a2a;
+            font-weight: bold;
+            color: transparent; }
           .phone-ke .back-screen .out-screen .inner-screen .app-out .app-logo:hover {
             box-shadow: 0px 0px 0px 2px #ffffff91; }
+          .phone-ke .back-screen .out-screen .inner-screen .app-out .nopic:hover {
+            box-shadow: 0px 0px 0px 2px red !important;
+            background-image: none !important;
+            color: red; }
           .phone-ke .back-screen .out-screen .inner-screen .app-out .tt {
             width: 100%;
             font-size: 12px;
@@ -1662,7 +1660,6 @@ a {
   box-shadow: 0px 0px 4px 0 #000000;
   background-position: center;
   border-radius: 6px 0 0 6px;
-  background-image: url("https://anuluca.gitee.io/me/other/YfLHgA.jpg");
   background-size: 100% auto;
   position: relative; }
   .guidePic .title {
@@ -1672,4 +1669,59 @@ a {
     font-weight: bold;
     font-style: italic;
     bottom: -20px;
-    left: 20px; }
+    left: 20px;
+    z-index: 2; }
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  height: 100%;
+  border-radius: 6px 0 0 6px; }
+  .swiper-container .swiper-slide {
+    background-position: center;
+    background-size: 100% auto;
+    display: block;
+    position: relative; }
+    .swiper-container .swiper-slide * {
+      color: white !important; }
+  .swiper-container .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 3px;
+    height: 6px;
+    opacity: 0.6; }
+  .swiper-container .swiper-button-prev,
+  .swiper-container .swiper-button-next {
+    opacity: 0;
+    transition: all 0.2s; }
+  .swiper-container .swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1; }
+  .swiper-container .slide-a {
+    background-image: url("https://anuluca.gitee.io/me/Toys/DSC01295.jpg"); }
+  .swiper-container .slide-b {
+    background-image: url("https://anuluca.gitee.io/me/Games/pokemon_g7_sun/IMG_20161127_022610_01-min.jpg"); }
+  .swiper-container .slide-c {
+    background-image: url("https://anuluca.gitee.io/me/Games/dragolia_lost/Screenshot_20200513-010224.jpg"); }
+  .swiper-container .slide-d {
+    background-image: url("https://anuluca.gitee.io/me/Games/ac_revolation/20210613230547_1.jpg"); }
+  .swiper-container .slide-e {
+    background-image: url("https://anuluca.gitee.io/me/Games/pokemon_g5_white/IMG_20200111_183905.jpg"); }
+  .swiper-container .des {
+    right: 35px;
+    bottom: 22px;
+    position: absolute; }
+    .swiper-container .des .route {
+      font-size: 18px;
+      text-shadow: 1px 1px 2px black; }
+    .swiper-container .des .route-title {
+      font-size: 38px;
+      text-shadow: 1px 1px 2px black;
+      font-weight: bold; }
+    .swiper-container .des .update-time {
+      font-size: 10px;
+      text-shadow: 1px 1px 2px black; }
+
+.swiper-container:hover .swiper-button-prev,
+.swiper-container:hover .swiper-button-next {
+  opacity: 1; }
