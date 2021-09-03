@@ -161,6 +161,7 @@ a:hover {
   display: block;
   margin-top: 30px;
   text-align: center;
+  color: #888d8f;
   font-weight: bold;
   margin-top: 200px;
 }
@@ -2012,21 +2013,6 @@ a {
 .swiper-container .swiper-pagination-bullet-active {
   background-color: white;
   opacity: 1;
-}
-.swiper-container .slide-a {
-  background-image: url("https://anuluca.gitee.io/me/Toys/DSC01295.jpg");
-}
-.swiper-container .slide-b {
-  background-image: url("https://anuluca.gitee.io/me/Games/pokemon_g7_sun/IMG_20161127_022610_01-min.jpg");
-}
-.swiper-container .slide-c {
-  background-image: url("https://anuluca.gitee.io/me/Games/dragolia_lost/Screenshot_20200513-010224.jpg");
-}
-.swiper-container .slide-d {
-  background-image: url("https://anuluca.gitee.io/me/Games/ac_revolation/20210613230547_1.jpg");
-}
-.swiper-container .slide-e {
-  background-image: url("https://anuluca.gitee.io/me/Games/pokemon_g5_white/IMG_20200111_183905.jpg");
 }
 .swiper-container .des {
   right: 35px;
