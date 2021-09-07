@@ -104,8 +104,10 @@ function setWidth() {
 //宽度过低时对页面进行调整
 function hidePics() {
     //头图切换
-    $(".newGuide").hide()
-    $(".backlogo").hide()
+    $(".guide").hide()
+    $(".newGuide").css({ height: "100px",width:"100%" })
+    $(".guidePic").css({ width:"100%",borderRadius: "6px" })
+    $(".des").css({ zoom: "0.7",top:"30%" })
     $(".mobileimg").show()
 
     //作品栏调整
@@ -115,7 +117,9 @@ function hidePics() {
 //正常展示图片
 function showPics() {
     //头图切换
-    $(".newGuide").show()
+    $(".guide").show()
+    $(".newGuide").css({ height: "450px",width:"62vw" })
+    $(".guidePic").css({ width:"75%",borderRadius: "6px 0 0 6px" })
+    $(".des").css({ zoom: "1",bottom:"22px" })
     $(".mobileimg").hide()
-    $(".backlogo").show()
 }
