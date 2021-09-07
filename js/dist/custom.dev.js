@@ -137,7 +137,7 @@ function hidePics() {
   //头图切换
   $(".guide").hide();
   $(".newGuide").css({
-    height: "100px",
+    height: "150px",
     width: "100%"
   });
   $(".guidePic").css({
@@ -145,8 +145,14 @@ function hidePics() {
     borderRadius: "6px"
   });
   $(".des").css({
-    zoom: "0.7",
-    top: "30%"
+    zoom: "0.7"
+  });
+  $(".swiper-pagination-bullets").css({
+    bottom: "0"
+  });
+  $(".swiper-pagination-bullet").css({
+    width: "15px",
+    height: "2px"
   });
   $(".mobileimg").show(); //作品栏调整
 
@@ -168,8 +174,14 @@ function showPics() {
     borderRadius: "6px 0 0 6px"
   });
   $(".des").css({
-    zoom: "1",
-    bottom: "22px"
+    zoom: "1"
+  });
+  $(".swiper-pagination-bullets").css({
+    bottom: "10px"
+  });
+  $(".swiper-pagination-bullet").css({
+    width: "30px",
+    height: "6px"
   });
   $(".mobileimg").hide();
 }
