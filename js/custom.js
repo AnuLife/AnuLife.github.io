@@ -106,9 +106,12 @@ function hidePics() {
     //头图切换
     $(".guide").hide()
     $(".newGuide").css({ height: "150px",width:"100%" })
-    $(".guidePic").css({ width:"100%",borderRadius: "6px" })
+    $(".guidePic").css({ width:"100%"})
+    $(".swiper-container").css({ borderRadius: "4px" })
+    $(".swiper-button-prev,.swiper-button-next").hide()
     $(".des").css({ zoom: "0.7" })
     $(".swiper-pagination-bullets").css({ bottom: "0" })
+    $(".guidePic .title").css({ bottom: '-7px',left: '6px' })
     $(".swiper-pagination-bullet").css({ width: "15px",height:"2px" })
     $(".mobileimg").show()
 
@@ -121,9 +124,12 @@ function showPics() {
     //头图切换
     $(".guide").show()
     $(".newGuide").css({ height: "450px",width:"62vw" })
-    $(".guidePic").css({ width:"75%",borderRadius: "6px 0 0 6px" })
+    $(".guidePic").css({ width:"75%"})
+    $(".swiper-container").css({ borderRadius: "6px 0 0 6px" })
+    $(".swiper-button-prev,.swiper-button-next").show()
     $(".des").css({ zoom: "1" })
     $(".swiper-pagination-bullets").css({ bottom: "10px" })
+    $(".guidePic .title").css({ bottom: '-20px',left: '20px' })
     $(".swiper-pagination-bullet").css({ width: "30px",height:"6px" })
     $(".mobileimg").hide()
 }
