@@ -1034,7 +1034,7 @@ a {
   .myPagination > div {
     float: right; }
     .myPagination > div > a > div {
-      width: 30px;
+      padding: 0 10px;
       height: 40px;
       text-align: center;
       line-height: 40px;
