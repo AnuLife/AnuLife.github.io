@@ -434,7 +434,7 @@ a:hover {
 }
 
 .book-sidebar .book-menu ul {
-  padding-left: 24px !important;
+  padding-left: 1.2rem !important;
   margin-left: 0 !important;
   padding-top: 4px !important;
 }
@@ -480,6 +480,12 @@ a:hover {
   .announce-and-iframe .announce {
     float: none !important;
     width: auto !important;
+  }
+
+  .suipai-item {
+    width: 100vw !important;
+    height: 50px !important;
+    line-height: 50px !important;
   }
 
   .announce-and-iframe .iframe-div {
@@ -539,9 +545,52 @@ a:hover {
     line-height: 50px;
   }
 
-  .suipai-item {
-    height: 50px;
-    background-size: 100% auto;
+  .guide {
+    display: none;
+  }
+
+  .newGuide {
+    height: 150px !important;
+    width: 100% !important;
+  }
+
+  .mobileimg {
+    display: none;
+  }
+
+  .shits > div {
+    margin-left: 0px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 2px !important;
+  }
+
+  .guidePic .title {
+    bottom: -7px !important;
+    left: 6px !important;
+  }
+
+  .swiper-pagination-bullets {
+    bottom: 0 !important;
+  }
+
+  .guidePic {
+    width: 100% !important;
+  }
+
+  .swiper-container {
+    border-radius: 4px !important;
+  }
+
+  .swiper-button-prev,
+.swiper-button-next {
+    display: none;
+  }
+
+  .des {
+    zoom: 0.7;
   }
 }
 .drink-time {
