@@ -127,6 +127,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </ul>
 <h2 id="框架">框架</h2>
 <ul>
+<li><a href="/42656"><strong>31</strong> elementUI相同元素合并行</a></li>
 <li><a href="/48172"><strong>30</strong> v-if和v-show的区别</a></li>
 <li><a href="/14022"><strong>29</strong> webpack打包项目时会打包已经import但没用到的模块吗</a></li>
 <li><a href="/56565"><strong>28</strong> npmi和npmci的区别</a></li>
@@ -307,7 +308,7 @@ function sidebar_toggle() {
           <div class="book-post">
   <h1 id="￼2-font-color-gray-134-font">elementUI中input框正整数+数字范围限制 <font color="gray">#134</font></h1>
 <p><strong>Anuluca</strong>     <strong>Date :</strong> 2021-07-09   <strong>Tags :</strong> 3</p>
-<div class = "articlehead" style="background-image:url('图片链接')"></div>
+<div class = "articlehead" style="background-image:url('https://anuluca.gitee.io/me/Games/mario_odessy/tiUWlD.jpg')"></div>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:value</span>=<span class="string">"text"</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">input</span>=<span class="string">"e =&gt; (text = isnumber(e))"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">style</span>=<span class="string">"width: 66px"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:disabled</span>=<span class="string">"isEdit"</span></span></span><br><span class="line"><span class="tag">&gt;</span><span class="tag">&lt;/<span class="name">el-input</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">isnumber(val) &#123;</span><br><span class="line">      val = val.replace(<span class="regexp">/[^0-9]/gi</span>, <span class="string">""</span>);</span><br><span class="line">      <span class="comment">// 此处可以限制位数以及大小</span></span><br><span class="line">      <span class="keyword">return</span> val;</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure>
 
